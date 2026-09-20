@@ -1,25 +1,25 @@
 class Fluxcope < Formula
   desc "A terminal HTTP and HTTPS debugging proxy with recording and request mapping"
   homepage "https://github.com/LorNtz/fluxcope"
-  version "0.1.0"
+  version "0.2.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/LorNtz/fluxcope/releases/download/v0.1.0/fluxcope-aarch64-apple-darwin.tar.xz"
-      sha256 "dfb9158ccc1d87d0ad67880b7ba2532906729fb153c00398907aacba8fccc6f7"
+      url "https://github.com/LorNtz/fluxcope/releases/download/v0.2.0/fluxcope-aarch64-apple-darwin.tar.xz"
+      sha256 "561ac5ecfe2348a49010b67170fb0b7c636c612e2c733839ade0e41fbd105148"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/LorNtz/fluxcope/releases/download/v0.1.0/fluxcope-x86_64-apple-darwin.tar.xz"
-      sha256 "542ba40b43604c80560b0e18615fb32efe47585dab172d4bf30a775550ac7fac"
+      url "https://github.com/LorNtz/fluxcope/releases/download/v0.2.0/fluxcope-x86_64-apple-darwin.tar.xz"
+      sha256 "b784a5b450306901ad5a2f285af12609fc53e37b252c4f591bba0416f93408ed"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/LorNtz/fluxcope/releases/download/v0.1.0/fluxcope-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "5385d7c16072c4e1ef768c9d8a61cbfd8ae99c19d199ea55f29f7103250add92"
+      url "https://github.com/LorNtz/fluxcope/releases/download/v0.2.0/fluxcope-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "93b866eb09e32cc5a68a834ff6de03aaa5e59a84763424fc00733552dbdbe9a6"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/LorNtz/fluxcope/releases/download/v0.1.0/fluxcope-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "e3dee9de4baca07f88d91b567a2310e06477577ad25dc42d2b356aa0fd756b09"
+      url "https://github.com/LorNtz/fluxcope/releases/download/v0.2.0/fluxcope-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "07e2b7b140e36b40619499ff91330fc01a19597a4fe80c89a9203d423b9994cf"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
